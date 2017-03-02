@@ -32,3 +32,18 @@ describe('Merge', function(){
     //expect(swapCounter).toEqual(0);
   });
 });
+
+
+describe('MergeSort', function(){
+  beforeEach(function(){
+    swapCounter=0;
+    comparisonCounter=0;
+  })
+  it('m', function(){
+    expect( merge([1,3,5], [4,6,7,8]) ).toEqual( [1,3,4,5,6,7,8]);
+    //expect(swapCounter).toEqual(0);
+  });
+});
+
+
+

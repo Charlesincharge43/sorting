@@ -24,3 +24,16 @@ function merge(arr1, arr2) {
   }
   return mergedArr;
 }
+
+// function recursiveSplit(arr){
+//   for(var i=0;i<arr.length();i++){
+//     return recursiveSplit(split(arr)[i])
+// }
+
+function mergeSort(arr){
+
+  var splitArrays = split(arr);
+  var arr1 = mergeSort(splitArrays[0]);
+  var arr2 = mergeSort(splitArrays[1]);
+  return merge(arr1,arr2)
+}
